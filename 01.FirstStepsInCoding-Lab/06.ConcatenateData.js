@@ -8,4 +8,4 @@ function concatenateData(input) {
     console.log(string);
 }
 
-concatenateData(["Miki", "Yancheva", 27, "Ruse"]);
+concatenateData(["Michael", "Owen", 35, "New York"]);

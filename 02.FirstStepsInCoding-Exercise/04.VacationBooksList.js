@@ -1,8 +1,8 @@
 function vacationBookList(input) {
-    const totalPages = Number(input[0]);
-    const pagesReadPerHour = Number(input[1]);
-    const days = Number(input[2]);
-    const dailyReadingHours = totalPages / pagesReadPerHour / days;
+    let totalPages = Number(input[0]);
+    let pagesReadPerHour = Number(input[1]);
+    let days = Number(input[2]);
+    let dailyReadingHours = totalPages / pagesReadPerHour / days;
     console.log(dailyReadingHours);
 }
 

@@ -1,9 +1,9 @@
 function fishTank(input) {
-    const length = Number(input[0]);
-    const width = Number(input[1]);
-    const height = Number(input[2]);
-    const percent = Number(input[3]);
-    const waterLitres =
+    let length = Number(input[0]);
+    let width = Number(input[1]);
+    let height = Number(input[2]);
+    let percent = Number(input[3]);
+    let waterLitres =
         ((length * width * height) / 1000) * ((100 - percent) / 100);
     console.log(waterLitres);
 }

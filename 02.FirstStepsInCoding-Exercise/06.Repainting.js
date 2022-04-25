@@ -1,21 +1,21 @@
 function repainting(input) {
-    const nylonPrice = 1.5;
-    const paintPrice = 14.5;
-    const thinnerPrice = 5;
-    const bagPrice = 0.4;
+    const NYLON_PRICE = 1.5;
+    const PAINT_PRICE = 14.5;
+    const THINNER_PRICE = 5;
+    const BAG_PRICE = 0.4;
 
-    const nylonSquareMeters = Number(input[0]) + 2;
-    const paintLitres = Number(input[1]) * 1.1;
-    const thinnerLitres = Number(input[2]);
-    const labourHours = Number(input[3]);
+    let nylonSquareMeters = Number(input[0]) + 2;
+    let paintLitres = Number(input[1]) * 1.1;
+    let thinnerLitres = Number(input[2]);
+    let labourHours = Number(input[3]);
 
-    const materialExpenses =
-        nylonSquareMeters * nylonPrice +
-        paintLitres * paintPrice +
-        thinnerLitres * thinnerPrice +
-        bagPrice;
-    const labourExpenses = materialExpenses * 0.3 * labourHours;
-    const finalSum = materialExpenses + labourExpenses;
+    let materialExpenses =
+        nylonSquareMeters * NYLON_PRICE +
+        paintLitres * PAINT_PRICE +
+        thinnerLitres * THINNER_PRICE +
+        BAG_PRICE;
+    let labourExpenses = materialExpenses * 0.3 * labourHours;
+    let finalSum = materialExpenses + labourExpenses;
     console.log(finalSum);
 }
 

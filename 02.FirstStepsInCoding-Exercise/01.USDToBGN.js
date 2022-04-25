@@ -1,6 +1,7 @@
 function usdToBgnConverter(input) {
-    const usd = Number(input[0]);
-    const bgn = usd * 1.79549;
+    const USD_TO_BGN_COURSE = 1.79549;
+    let usd = Number(input[0]);
+    let bgn = usd * USD_TO_BGN_COURSE;
     console.log(bgn);
 }
 

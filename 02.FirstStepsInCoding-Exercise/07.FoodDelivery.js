@@ -1,20 +1,20 @@
 function foodDelivery(input) {
-    const chickenMealPrice = 10.35;
-    const fishMealPrice = 12.4;
-    const veggieMealPrice = 8.15;
-    const dessertPricePercentage = 20;
-    const deliveryPrice = 2.5;
+    const CHICKEN_MEAL_PRICE = 10.35;
+    const FISH_MEAL_PRICE = 12.4;
+    const VEGGIE_MEAL_PRICE = 8.15;
+    const DESSERT_PRICE_PERCENTAGE = 20;
+    const DELIVERY_PRICE = 2.5;
 
-    const chickenMeals = Number(input[0]);
-    const fishMeals = Number(input[1]);
-    const veggieMeals = Number(input[2]);
+    let chickenMeals = Number(input[0]);
+    let fishMeals = Number(input[1]);
+    let veggieMeals = Number(input[2]);
 
-    const finalPrice =
-        (chickenMealPrice * chickenMeals +
-            fishMealPrice * fishMeals +
-            veggieMealPrice * veggieMeals) *
-            ((100 + dessertPricePercentage) / 100) +
-        deliveryPrice;
+    let finalPrice =
+        (CHICKEN_MEAL_PRICE * chickenMeals +
+            FISH_MEAL_PRICE * fishMeals +
+            VEGGIE_MEAL_PRICE * veggieMeals) *
+            ((100 + DESSERT_PRICE_PERCENTAGE) / 100) +
+        DELIVERY_PRICE;
     console.log(finalPrice);
 }
 

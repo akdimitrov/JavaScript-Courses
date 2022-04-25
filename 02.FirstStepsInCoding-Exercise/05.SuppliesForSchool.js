@@ -1,18 +1,18 @@
 function suppliesForSchool(input) {
-    const penPackPrice = 5.8;
-    const markerPackPrice = 7.2;
-    const detergentPricePerLitre = 1.2;
+    const PEN_PACK_PRICE = 5.8;
+    const MARKER_PACK_PRICE = 7.2;
+    const DETERGENT_PRICE_PER_LITRE = 1.2;
 
-    const penPacks = Number(input[0]);
-    const markerPacks = Number(input[1]);
-    const detergentLitres = Number(input[2]);
-    const discountPercentage = Number(input[3]);
+    let penPacks = Number(input[0]);
+    let markerPacks = Number(input[1]);
+    let detergentLitres = Number(input[2]);
+    let discountPercentage = Number(input[3]);
 
-    const totalPrice =
-        penPacks * penPackPrice +
-        markerPacks * markerPackPrice +
-        detergentLitres * detergentPricePerLitre;
-    const finalPrice = totalPrice - totalPrice * (discountPercentage / 100);
+    let totalPrice =
+        penPacks * PEN_PACK_PRICE +
+        markerPacks * MARKER_PACK_PRICE +
+        detergentLitres * DETERGENT_PRICE_PER_LITRE;
+    let finalPrice = totalPrice - totalPrice * (discountPercentage / 100);
     console.log(finalPrice);
 }
 

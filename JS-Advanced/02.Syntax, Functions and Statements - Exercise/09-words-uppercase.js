@@ -1,5 +1,5 @@
 function solve(input) {
-    let words = input.toUpperCase().split(/[\s.,!?]+/).filter(x => x);
+    let words = input.toUpperCase().match(/\w+/gm);
     console.log(words.join(', '));
 }
 

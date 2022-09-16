@@ -1,9 +1,8 @@
-function smallestNums(arr){
-    let nums = [...arr];
-    nums.sort((a, b) => a - b);
-
-    console.log(`${nums[0]} ${nums[1]}`);
+function solve(input) {
+    let startIndex = Math.floor(input.length / 2);
+    let resultArray = input.sort((a, b) => a - b).slice(startIndex);
+    return resultArray;
 }
 
-smallestNums([30, 15, 50, 5]);
-smallestNums([3, 0, 10, 4, 7, 3]);
+console.log(solve([4, 7, 2, 5]));
+console.log(solve([3, 19, 14, 7, 2, 19, 6]));
